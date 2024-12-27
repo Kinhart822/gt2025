@@ -17,7 +17,7 @@ def path_exists(graph, start, end):
 def main():
     # Graph
     graph = {
-        '1': ['2', '5'],
+        '1': ['2'],
         '2': ['5'],
         '3': ['6'],
         '4': ['6', '7'],
