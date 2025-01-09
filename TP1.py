@@ -27,7 +27,7 @@ def main():
         '7': ['4', '6']
     }
 
-    print("Enter the start and end nodes:")
+    print("Enter the start and end nodes: ")
     start = input("Start node: ").strip()
     end = input("End node: ").strip()
 
