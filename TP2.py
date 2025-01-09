@@ -40,7 +40,7 @@ def count_components(directed_g):
             dfs(i, component, undirected_g, undirected_visited)
             undirected_components.append(component)
 
-    return "Strongly Connected Components (Strong):" + str(directed_components) + "\nWeakly Connected Components (Weak): " + str(undirected_components)
+    return "Strongly Connected Components (Strong): " + str(directed_components) + "\nWeakly Connected Components (Weak): " + str(undirected_components)
 
 
 if __name__ == '__main__':
