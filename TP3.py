@@ -79,7 +79,7 @@ if __name__ == "__main__":
     root.right.right = TreeNode(5)
     root.right.right.left = TreeNode(7)
 
-x = int(input("b) Inorder Algorithm: Enter the root label of the subtree to traverse (inorder): "))
+x = int(input("b)Inorder Algorithm: Enter the root label of the subtree to traverse (inorder): "))
 
 subtree_root = findSubtree(root, x)
 if subtree_root:
