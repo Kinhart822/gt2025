@@ -14,16 +14,17 @@ def path_exists(graph, start, end):
 
     return dfs(start)
 
+
 def main():
     # Graph
     graph = {
         '1': ['2'],
-        '2': ['5'],
+        '2': ['1', '5'],
         '3': ['6'],
         '4': ['6', '7'],
-        '5': [],
-        '6': ['7'],
-        '7': []
+        '5': ['2'],
+        '6': ['3', '4', '7'],
+        '7': ['4', '6']
     }
 
     print("Enter the start and end nodes:")
@@ -34,6 +35,7 @@ def main():
         print(f"=> Path exists between {start} and {end}.")
     else:
         print(f"=> No path exists between {start} and {end}.")
+
 
 if __name__ == "__main__":
     main()
